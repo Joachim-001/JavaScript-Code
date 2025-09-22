@@ -15,6 +15,8 @@
 }
 
 body {
+    margin: 20px;
+    padding: 20px, 10px;
     background-color: var(--background-color);
     color: var(--text-color);
     display: flex;
@@ -23,6 +25,27 @@ body {
     min-height: 100vh;
 }
 
+#loading{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--background-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.spinner {
+  border: 6px solid var(--primary-color);
+  border-top: 6px solid var(--secondary-color);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
 .task-list-container {
     width: 100%;
     max-width: 600px;
@@ -87,7 +110,7 @@ h2 {
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    background-color: #f9f9f9;
+    background-color:#bad2e9;
     border-radius: 8px;
     margin-bottom: 0.8rem;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
