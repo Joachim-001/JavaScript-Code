@@ -7,6 +7,12 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
+    <div id="loading" loading="lazy">
+        <div class="spinner">
+            <p>Loading...</p>
+        </div>
+    </div>
+
     <div class="task-list-container">
         <h1>To-Do List😈‼</h1>
         <form id="new-task-form">
@@ -17,12 +23,13 @@
             <input 
                 type="submit" 
                 id="new-task-submit" 
-                value="Add task">
+                value="➕ Add task">
         </form>
         <main>
             <section class="task-list">
                 <h2>Tasks</h2>
                 <div id="tasks">
+                    <!-- Tasks will be dynamically added here -->
                     </div>
             </section>
         </main>
